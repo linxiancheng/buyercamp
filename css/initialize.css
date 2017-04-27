@@ -1,0 +1,48 @@
+*,::before,::after{
+margin: 0;
+padding: 0;
+/*取消点击高亮效果*/
+-webkit-tap-highlight-color: transparent;
+/*盒子与边框开始计算*/
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #333;
+
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border: none;
+	outline: none;
+	appearance: none;/*移动端默认表单样式*/
+	-webkit-appearance: none;
+}
+.l_float{
+	float: left;
+}
+.r_float{
+	float: right;
+}
+/************/
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	height: 0;
+	display: block;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/************/
